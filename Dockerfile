@@ -7,7 +7,5 @@ RUN echo "deb http://downloads.skewed.de/apt/xenial xenial universe" >> /etc/apt
 RUN apt-key adv --keyserver pgp.skewed.de --recv-key 612DEFB798507F25
 
 RUN apt-get update && apt-get install --yes --no-install-recommends \
-	python3-graph-tool \
-	python3-pip
-
+	python3-graph-tool=2.23-1
 
