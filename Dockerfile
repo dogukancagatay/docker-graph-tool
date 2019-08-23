@@ -7,8 +7,8 @@ RUN apt-get update && apt-get install --yes --no-install-recommends \
 RUN echo "deb http://downloads.skewed.de/apt/bionic bionic universe" >> /etc/apt/sources.list && \
 	echo "deb-src http://downloads.skewed.de/apt/bionic bionic universe" >> /etc/apt/sources.list
 
-RUN apt-key adv --keyserver pgp.skewed.de --recv-key 612DEFB798507F25
+RUN apt-key adv --recv-key 612DEFB798507F25
 
 RUN apt-get update && apt-get install --yes --no-install-recommends \
-	python3-graph-tool=2.27-4
+	python3-graph-tool=2.29-1
 
