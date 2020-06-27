@@ -1,5 +1,5 @@
 FROM ubuntu:18.04
-MAINTAINER Dogukan Cagatay <dcagatay@gmail.com>
+LABEL maintainer="Dogukan Cagatay <dcagatay@gmail.com>"
 
 RUN apt-get update && apt-get install --yes --no-install-recommends \
 	gnupg2 \
@@ -10,4 +10,4 @@ RUN echo "deb [ arch=amd64 ] https://downloads.skewed.de/apt bionic main" >> /et
 RUN apt-key adv --no-tty --keyserver keys.openpgp.org --recv-key 612DEFB798507F25
 
 RUN apt-get update && apt-get install --yes --no-install-recommends \
-	python3-graph-tool=2.32
+	python3-graph-tool=2.33
